@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GTMHTTPFetcher.h"
+#import "HTMLDocument.h"
 
 @interface ViewController ()
 
@@ -42,8 +43,8 @@
         // fetch succeeded
         //NSString *data = [[[NSString alloc] initWithData:retrievedData encoding:NSUTF8StringEncoding] autorelease];
         
-        
-        
+        HTMLDocument* htmlDoc = [HTMLDocument documentWithData:retrievedData error:nil];
+        NSLog(@"Document: %@", [htmlDoc description]);
         
     }
 }
