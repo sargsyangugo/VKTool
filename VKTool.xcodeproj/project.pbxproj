@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84E04A42173AEE2C00194002 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04A41173AEE2C00194002 /* UIKit.framework */; };
+		84E04A44173AEE2C00194002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04A43173AEE2C00194002 /* Foundation.framework */; };
+		84E04A46173AEE2C00194002 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04A45173AEE2C00194002 /* CoreGraphics.framework */; };
+		84E04A4C173AEE2C00194002 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84E04A4A173AEE2C00194002 /* InfoPlist.strings */; };
+		84E04A4E173AEE2C00194002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04A4D173AEE2C00194002 /* main.m */; };
+		84E04A52173AEE2C00194002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04A51173AEE2C00194002 /* AppDelegate.m */; };
+		84E04A54173AEE2C00194002 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E04A53173AEE2C00194002 /* Default.png */; };
+		84E04A56173AEE2C00194002 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E04A55173AEE2C00194002 /* Default@2x.png */; };
+		84E04A58173AEE2C00194002 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84E04A57173AEE2C00194002 /* Default-568h@2x.png */; };
+		84E04A5B173AEE2C00194002 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84E04A59173AEE2C00194002 /* MainStoryboard.storyboard */; };
+		84E04A5E173AEE2C00194002 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04A5D173AEE2C00194002 /* ViewController.m */; };
+		84E04AB2173AEE8C00194002 /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AA3173AEE8C00194002 /* HTMLDocument.m */; };
+		84E04AB3173AEE8C00194002 /* HTMLNode+XPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AA5173AEE8C00194002 /* HTMLNode+XPath.m */; };
+		84E04AB4173AEE8C00194002 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AA7173AEE8C00194002 /* HTMLNode.m */; };
+		84E04AB5173AEE8C00194002 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 84E04AA8173AEE8C00194002 /* README */; };
+		84E04AC9173AEFC900194002 /* GTMGatherInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AB8173AEFC900194002 /* GTMGatherInputStream.m */; };
+		84E04ACA173AEFC900194002 /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04ABA173AEFC900194002 /* GTMHTTPFetcher.m */; };
+		84E04ACB173AEFC900194002 /* GTMHTTPFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04ABC173AEFC900194002 /* GTMHTTPFetcherLogging.m */; };
+		84E04ACC173AEFC900194002 /* GTMHTTPFetcherLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04ABE173AEFC900194002 /* GTMHTTPFetcherLogViewController.m */; };
+		84E04ACD173AEFC900194002 /* GTMHTTPFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AC0173AEFC900194002 /* GTMHTTPFetcherService.m */; };
+		84E04ACE173AEFC900194002 /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AC2173AEFC900194002 /* GTMHTTPFetchHistory.m */; };
+		84E04ACF173AEFC900194002 /* GTMHTTPUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AC4173AEFC900194002 /* GTMHTTPUploadFetcher.m */; };
+		84E04AD0173AEFC900194002 /* GTMMIMEDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AC6173AEFC900194002 /* GTMMIMEDocument.m */; };
+		84E04AD1173AEFC900194002 /* GTMReadMonitorInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E04AC8173AEFC900194002 /* GTMReadMonitorInputStream.m */; };
+		84E04AD3173AEFE700194002 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04AD2173AEFE700194002 /* libxml2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84E04A3E173AEE2C00194002 /* VKTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84E04A41173AEE2C00194002 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84E04A43173AEE2C00194002 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84E04A45173AEE2C00194002 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84E04A49173AEE2C00194002 /* VKTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VKTool-Info.plist"; sourceTree = "<group>"; };
+		84E04A4B173AEE2C00194002 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84E04A4D173AEE2C00194002 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84E04A4F173AEE2C00194002 /* VKTool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VKTool-Prefix.pch"; sourceTree = "<group>"; };
+		84E04A50173AEE2C00194002 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84E04A51173AEE2C00194002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84E04A53173AEE2C00194002 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		84E04A55173AEE2C00194002 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		84E04A57173AEE2C00194002 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		84E04A5A173AEE2C00194002 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		84E04A5C173AEE2C00194002 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84E04A5D173AEE2C00194002 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84E04AA2173AEE8C00194002 /* HTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDocument.h; sourceTree = "<group>"; };
+		84E04AA3173AEE8C00194002 /* HTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDocument.m; sourceTree = "<group>"; };
+		84E04AA4173AEE8C00194002 /* HTMLNode+XPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTMLNode+XPath.h"; sourceTree = "<group>"; };
+		84E04AA5173AEE8C00194002 /* HTMLNode+XPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTMLNode+XPath.m"; sourceTree = "<group>"; };
+		84E04AA6173AEE8C00194002 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		84E04AA7173AEE8C00194002 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		84E04AA8173AEE8C00194002 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		84E04AB7173AEFC900194002 /* GTMGatherInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGatherInputStream.h; sourceTree = "<group>"; };
+		84E04AB8173AEFC900194002 /* GTMGatherInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMGatherInputStream.m; sourceTree = "<group>"; };
+		84E04AB9173AEFC900194002 /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		84E04ABA173AEFC900194002 /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		84E04ABB173AEFC900194002 /* GTMHTTPFetcherLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogging.h; sourceTree = "<group>"; };
+		84E04ABC173AEFC900194002 /* GTMHTTPFetcherLogging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherLogging.m; sourceTree = "<group>"; };
+		84E04ABD173AEFC900194002 /* GTMHTTPFetcherLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherLogViewController.h; sourceTree = "<group>"; };
+		84E04ABE173AEFC900194002 /* GTMHTTPFetcherLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherLogViewController.m; sourceTree = "<group>"; };
+		84E04ABF173AEFC900194002 /* GTMHTTPFetcherService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcherService.h; sourceTree = "<group>"; };
+		84E04AC0173AEFC900194002 /* GTMHTTPFetcherService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcherService.m; sourceTree = "<group>"; };
+		84E04AC1173AEFC900194002 /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		84E04AC2173AEFC900194002 /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		84E04AC3173AEFC900194002 /* GTMHTTPUploadFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPUploadFetcher.h; sourceTree = "<group>"; };
+		84E04AC4173AEFC900194002 /* GTMHTTPUploadFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPUploadFetcher.m; sourceTree = "<group>"; };
+		84E04AC5173AEFC900194002 /* GTMMIMEDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMIMEDocument.h; sourceTree = "<group>"; };
+		84E04AC6173AEFC900194002 /* GTMMIMEDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMMIMEDocument.m; sourceTree = "<group>"; };
+		84E04AC7173AEFC900194002 /* GTMReadMonitorInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMReadMonitorInputStream.h; sourceTree = "<group>"; };
+		84E04AC8173AEFC900194002 /* GTMReadMonitorInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMReadMonitorInputStream.m; sourceTree = "<group>"; };
+		84E04AD2173AEFE700194002 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84E04A3B173AEE2C00194002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E04AD3173AEFE700194002 /* libxml2.dylib in Frameworks */,
+				84E04A42173AEE2C00194002 /* UIKit.framework in Frameworks */,
+				84E04A44173AEE2C00194002 /* Foundation.framework in Frameworks */,
+				84E04A46173AEE2C00194002 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84E04A35173AEE2C00194002 = {
+			isa = PBXGroup;
+			children = (
+				84E04AD2173AEFE700194002 /* libxml2.dylib */,
+				84E04A47173AEE2C00194002 /* VKTool */,
+				84E04A40173AEE2C00194002 /* Frameworks */,
+				84E04A3F173AEE2C00194002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84E04A3F173AEE2C00194002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84E04A3E173AEE2C00194002 /* VKTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84E04A40173AEE2C00194002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84E04A41173AEE2C00194002 /* UIKit.framework */,
+				84E04A43173AEE2C00194002 /* Foundation.framework */,
+				84E04A45173AEE2C00194002 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E04A47173AEE2C00194002 /* VKTool */ = {
+			isa = PBXGroup;
+			children = (
+				84E04AB6173AEFC900194002 /* gtm-http-fetcher */,
+				84E04AA0173AEE8C00194002 /* stklieme */,
+				84E04A50173AEE2C00194002 /* AppDelegate.h */,
+				84E04A51173AEE2C00194002 /* AppDelegate.m */,
+				84E04A59173AEE2C00194002 /* MainStoryboard.storyboard */,
+				84E04A5C173AEE2C00194002 /* ViewController.h */,
+				84E04A5D173AEE2C00194002 /* ViewController.m */,
+				84E04A48173AEE2C00194002 /* Supporting Files */,
+			);
+			path = VKTool;
+			sourceTree = "<group>";
+		};
+		84E04A48173AEE2C00194002 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84E04A49173AEE2C00194002 /* VKTool-Info.plist */,
+				84E04A4A173AEE2C00194002 /* InfoPlist.strings */,
+				84E04A4D173AEE2C00194002 /* main.m */,
+				84E04A4F173AEE2C00194002 /* VKTool-Prefix.pch */,
+				84E04A53173AEE2C00194002 /* Default.png */,
+				84E04A55173AEE2C00194002 /* Default@2x.png */,
+				84E04A57173AEE2C00194002 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84E04AA0173AEE8C00194002 /* stklieme */ = {
+			isa = PBXGroup;
+			children = (
+				84E04AA1173AEE8C00194002 /* HTMLDocument */,
+			);
+			path = stklieme;
+			sourceTree = "<group>";
+		};
+		84E04AA1173AEE8C00194002 /* HTMLDocument */ = {
+			isa = PBXGroup;
+			children = (
+				84E04AA2173AEE8C00194002 /* HTMLDocument.h */,
+				84E04AA3173AEE8C00194002 /* HTMLDocument.m */,
+				84E04AA4173AEE8C00194002 /* HTMLNode+XPath.h */,
+				84E04AA5173AEE8C00194002 /* HTMLNode+XPath.m */,
+				84E04AA6173AEE8C00194002 /* HTMLNode.h */,
+				84E04AA7173AEE8C00194002 /* HTMLNode.m */,
+				84E04AA8173AEE8C00194002 /* README */,
+			);
+			path = HTMLDocument;
+			sourceTree = "<group>";
+		};
+		84E04AB6173AEFC900194002 /* gtm-http-fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				84E04AB7173AEFC900194002 /* GTMGatherInputStream.h */,
+				84E04AB8173AEFC900194002 /* GTMGatherInputStream.m */,
+				84E04AB9173AEFC900194002 /* GTMHTTPFetcher.h */,
+				84E04ABA173AEFC900194002 /* GTMHTTPFetcher.m */,
+				84E04ABB173AEFC900194002 /* GTMHTTPFetcherLogging.h */,
+				84E04ABC173AEFC900194002 /* GTMHTTPFetcherLogging.m */,
+				84E04ABD173AEFC900194002 /* GTMHTTPFetcherLogViewController.h */,
+				84E04ABE173AEFC900194002 /* GTMHTTPFetcherLogViewController.m */,
+				84E04ABF173AEFC900194002 /* GTMHTTPFetcherService.h */,
+				84E04AC0173AEFC900194002 /* GTMHTTPFetcherService.m */,
+				84E04AC1173AEFC900194002 /* GTMHTTPFetchHistory.h */,
+				84E04AC2173AEFC900194002 /* GTMHTTPFetchHistory.m */,
+				84E04AC3173AEFC900194002 /* GTMHTTPUploadFetcher.h */,
+				84E04AC4173AEFC900194002 /* GTMHTTPUploadFetcher.m */,
+				84E04AC5173AEFC900194002 /* GTMMIMEDocument.h */,
+				84E04AC6173AEFC900194002 /* GTMMIMEDocument.m */,
+				84E04AC7173AEFC900194002 /* GTMReadMonitorInputStream.h */,
+				84E04AC8173AEFC900194002 /* GTMReadMonitorInputStream.m */,
+			);
+			path = "gtm-http-fetcher";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84E04A3D173AEE2C00194002 /* VKTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84E04A61173AEE2C00194002 /* Build configuration list for PBXNativeTarget "VKTool" */;
+			buildPhases = (
+				84E04A3A173AEE2C00194002 /* Sources */,
+				84E04A3B173AEE2C00194002 /* Frameworks */,
+				84E04A3C173AEE2C00194002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKTool;
+			productName = VKTool;
+			productReference = 84E04A3E173AEE2C00194002 /* VKTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84E04A36173AEE2C00194002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Admin;
+			};
+			buildConfigurationList = 84E04A39173AEE2C00194002 /* Build configuration list for PBXProject "VKTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84E04A35173AEE2C00194002;
+			productRefGroup = 84E04A3F173AEE2C00194002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84E04A3D173AEE2C00194002 /* VKTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84E04A3C173AEE2C00194002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E04A4C173AEE2C00194002 /* InfoPlist.strings in Resources */,
+				84E04A54173AEE2C00194002 /* Default.png in Resources */,
+				84E04A56173AEE2C00194002 /* Default@2x.png in Resources */,
+				84E04A58173AEE2C00194002 /* Default-568h@2x.png in Resources */,
+				84E04A5B173AEE2C00194002 /* MainStoryboard.storyboard in Resources */,
+				84E04AB5173AEE8C00194002 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84E04A3A173AEE2C00194002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E04A4E173AEE2C00194002 /* main.m in Sources */,
+				84E04A52173AEE2C00194002 /* AppDelegate.m in Sources */,
+				84E04A5E173AEE2C00194002 /* ViewController.m in Sources */,
+				84E04AB2173AEE8C00194002 /* HTMLDocument.m in Sources */,
+				84E04AB3173AEE8C00194002 /* HTMLNode+XPath.m in Sources */,
+				84E04AB4173AEE8C00194002 /* HTMLNode.m in Sources */,
+				84E04AC9173AEFC900194002 /* GTMGatherInputStream.m in Sources */,
+				84E04ACA173AEFC900194002 /* GTMHTTPFetcher.m in Sources */,
+				84E04ACB173AEFC900194002 /* GTMHTTPFetcherLogging.m in Sources */,
+				84E04ACC173AEFC900194002 /* GTMHTTPFetcherLogViewController.m in Sources */,
+				84E04ACD173AEFC900194002 /* GTMHTTPFetcherService.m in Sources */,
+				84E04ACE173AEFC900194002 /* GTMHTTPFetchHistory.m in Sources */,
+				84E04ACF173AEFC900194002 /* GTMHTTPUploadFetcher.m in Sources */,
+				84E04AD0173AEFC900194002 /* GTMMIMEDocument.m in Sources */,
+				84E04AD1173AEFC900194002 /* GTMReadMonitorInputStream.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84E04A4A173AEE2C00194002 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E04A4B173AEE2C00194002 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84E04A59173AEE2C00194002 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84E04A5A173AEE2C00194002 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84E04A5F173AEE2C00194002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84E04A60173AEE2C00194002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84E04A62173AEE2C00194002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VKTool/VKTool-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "VKTool/VKTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84E04A63173AEE2C00194002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VKTool/VKTool-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "VKTool/VKTool-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84E04A39173AEE2C00194002 /* Build configuration list for PBXProject "VKTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E04A5F173AEE2C00194002 /* Debug */,
+				84E04A60173AEE2C00194002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84E04A61173AEE2C00194002 /* Build configuration list for PBXNativeTarget "VKTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84E04A62173AEE2C00194002 /* Debug */,
+				84E04A63173AEE2C00194002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84E04A36173AEE2C00194002 /* Project object */;
+}
