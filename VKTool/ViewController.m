@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GTMHTTPFetcher.h"
 #import "HTMLDocument.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 
@@ -16,17 +17,24 @@
 
 @implementation ViewController
 
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    LoginViewController* loginViewController = (LoginViewController*)(segue.destinationViewController);
+    loginViewController.delegate = self;
+}
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    NSURL *url = [NSURL URLWithString:@"http://google.com/"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    GTMHTTPFetcher* fetcher = [GTMHTTPFetcher fetcherWithRequest:request];
-    [fetcher shouldFetchInBackground];
-    [fetcher beginFetchWithDelegate:self
-                  didFinishSelector:@selector(myFetcher:finishedWithData:error:)];
+	
+//    LoginViewController *view = [self.storyboard instantiateViewControllerWithIdentifier:@"viewStoryboardId"];
+//    NSURL *url = [NSURL URLWithString:@"http://google.com/"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    GTMHTTPFetcher* fetcher = [GTMHTTPFetcher fetcherWithRequest:request];
+//    [fetcher shouldFetchInBackground];
+//    [fetcher beginFetchWithDelegate:self
+//                  didFinishSelector:@selector(myFetcher:finishedWithData:error:)];
     
 }
 
@@ -43,16 +51,22 @@
         // fetch succeeded
         //NSString *data = [[[NSString alloc] initWithData:retrievedData encoding:NSUTF8StringEncoding] autorelease];
         
-        HTMLDocument* htmlDoc = [HTMLDocument documentWithData:retrievedData error:nil];
-        NSLog(@"Document: %@", [htmlDoc description]);
+        //HTMLDocument* htmlDoc = [HTMLDocument documentWithData:retrievedData error:nil];
         
     }
 }
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+//-----------LoginProtocole-------------------------
+
+-(void) userDidLogined:(NSMutableDictionary *)params
+{
+    
 }
 
 @end

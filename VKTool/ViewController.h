@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LoginProtocole.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UILoginViewDelegate>
 
 @end

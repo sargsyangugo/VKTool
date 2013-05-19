@@ -1,21 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="6pY-gy-Lgp">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="5">
+        <!--Navigation Controller-->
+        <scene sceneID="qPa-pl-Yzm">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <navigationController definesPresentationContext="YES" id="6pY-gy-Lgp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3A7-Cb-Jaj">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HmN-mC-NCk" kind="relationship" relationship="rootViewController" id="BOB-Jj-hxm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUn-Ny-aqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="-189"/>
+        </scene>
+        <!--View Controller - Wall-->
+        <scene sceneID="HC1-Em-W7W">
+            <objects>
+                <viewController id="HmN-mC-NCk" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QpR-qX-GUi">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Wall" id="zi6-L2-Mz3">
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="3ap-gA-U5b">
+                            <connections>
+                                <segue destination="E7Q-9O-vdL" kind="push" id="yyc-aj-HRW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnc-ZJ-YDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="204" y="-189"/>
+        </scene>
+        <!--Login View Controller - Login-->
+        <scene sceneID="YFe-np-qjd">
+            <objects>
+                <viewController storyboardIdentifier="vcLogin" id="E7Q-9O-vdL" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eui-tb-1R9">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wld-gw-Usp">
+                                <color key="backgroundColor" red="0.53299955266904797" green="1" blue="0.29215355075151161" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wld-gw-Usp" firstAttribute="bottom" secondItem="Eui-tb-1R9" secondAttribute="bottom" type="default" id="KdZ-Kh-JP1"/>
+                            <constraint firstItem="Wld-gw-Usp" firstAttribute="leading" secondItem="Eui-tb-1R9" secondAttribute="leading" type="default" id="LfY-Dl-k3X"/>
+                            <constraint firstItem="Wld-gw-Usp" firstAttribute="trailing" secondItem="Eui-tb-1R9" secondAttribute="trailing" type="default" id="Xcp-Yy-3Sp"/>
+                            <constraint firstItem="Wld-gw-Usp" firstAttribute="top" secondItem="Eui-tb-1R9" secondAttribute="top" type="default" id="YLh-pX-Tco"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="YFO-VP-cun"/>
+                    <connections>
+                        <outlet property="loginWebView" destination="Wld-gw-Usp" id="J37-do-bQ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M27-ox-iZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="593" y="-195"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

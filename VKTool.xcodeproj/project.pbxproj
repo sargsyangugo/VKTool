@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849C18C3173C397400F7FA78 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849C18C2173C397400F7FA78 /* LoginViewController.m */; };
 		84E04A42173AEE2C00194002 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04A41173AEE2C00194002 /* UIKit.framework */; };
 		84E04A44173AEE2C00194002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04A43173AEE2C00194002 /* Foundation.framework */; };
 		84E04A46173AEE2C00194002 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E04A45173AEE2C00194002 /* CoreGraphics.framework */; };
@@ -35,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848EC04C173D5DB0009BD38C /* LoginProtocole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginProtocole.h; sourceTree = "<group>"; };
+		849C18C1173C397400F7FA78 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		849C18C2173C397400F7FA78 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		84E04A3E173AEE2C00194002 /* VKTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E04A41173AEE2C00194002 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84E04A43173AEE2C00194002 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849C18C0173C395000F7FA78 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				849C18C1173C397400F7FA78 /* LoginViewController.h */,
+				849C18C2173C397400F7FA78 /* LoginViewController.m */,
+				848EC04C173D5DB0009BD38C /* LoginProtocole.h */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		84E04A35173AEE2C00194002 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +139,7 @@
 		84E04A47173AEE2C00194002 /* VKTool */ = {
 			isa = PBXGroup;
 			children = (
+				849C18C0173C395000F7FA78 /* Login */,
 				84E04AB6173AEFC900194002 /* gtm-http-fetcher */,
 				84E04AA0173AEE8C00194002 /* stklieme */,
 				84E04A50173AEE2C00194002 /* AppDelegate.h */,
@@ -280,6 +295,7 @@
 				84E04ACF173AEFC900194002 /* GTMHTTPUploadFetcher.m in Sources */,
 				84E04AD0173AEFC900194002 /* GTMMIMEDocument.m in Sources */,
 				84E04AD1173AEFC900194002 /* GTMReadMonitorInputStream.m in Sources */,
+				849C18C3173C397400F7FA78 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +378,7 @@
 		84E04A62173AEE2C00194002 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKTool/VKTool-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
@@ -374,6 +391,7 @@
 		84E04A63173AEE2C00194002 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKTool/VKTool-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
@@ -402,6 +420,7 @@
 				84E04A63173AEE2C00194002 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
